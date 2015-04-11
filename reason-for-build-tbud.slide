@@ -1,5 +1,5 @@
 Reason for Build tbud
-build a golang develop framework inspiration from using scala
+build a golang application framework inspiration from using scala
 
 Peng Yi
 peace0phmind@gmail.com
@@ -11,14 +11,13 @@ Because of scala's steep learning curve, we rebuild bugatti project for at least
 
 In this project, we build a proxy named _spirit_ to implement our distributed network connection. The _spirit_ with 7 files and less than 1k scala code need 6 seconds to compile, and one-jar size almost 20M. 
 
-I restart to find a light, faster, easy to leaning language. I found *golang*. But there isn't a develop framework like I had used in scala. So I began using golang to write a framework [[https://github.com/tbud/][tbud]] like typesafe in Jan 2015.
+I restart to find a light, faster, easy to leaning language. I found *golang*. But there isn't an application framework like I had used in scala. So I began using golang to write [[https://github.com/tbud/][tbud]] in Jan 2015.
 
 * Outline
 - Pros in using golang
 - Pros in using scala
 - Mix all the pros is tbud
 - Aim of tbud
-- Introduce the state of tbud
 
 * Pros in using golang
 - Easy to learn
