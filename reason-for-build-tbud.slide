@@ -1,15 +1,30 @@
 Reason for Build tbud
-build a golang application framework inspiration from using scala
+build a golang application framework, inspired by typesafe
 
 Peng Yi
 peace0phmind@gmail.com
 
 * About me
-I used *scala*, *playframework*, *akka*, *slick* etc. to write deploy tool [[https://github.com/ofpay/bugatti][bugatti]] from Oct 2013.
 
-Because of scala's steep learning curve, we rebuild bugatti project for at least 5 times in the past one year. And only 3 employee could use *scala* language. It is hard to popularize *scala* in our company.
+I used *scala*, *sbt*, *playframework*, *akka*, *slick*, *AngularJS* etc. to write [[https://github.com/ofpay/bugatti][bugatti]] from Oct 2013.
 
-In this project, we build a proxy named _spirit_ to implement our distributed network connection. The _spirit_ with 7 files and less than 1k scala code need 6 seconds to compile, and one-jar size almost 20M. 
+*Bugatti* is a DevOps solution in our company. It has such feature:
+
+- Use salt at the backgroud to control VM.
+- Use template to reflect the UI and connect with salt script.
+- Support LDAP 
+- Use a submodule *spirit* replace *salt-syndic* to support distributed.
+
+* Cons of scala
+
+When I develop this deploy tool, I found some cons of scala that I couldn't bear.
+
+- Steep learning curve
+	In our company, there's only 3 colleagues could use scala, and it's hard to popularize. We refactor bugatti at least 5 times in the past one year.
+- Wait everywhere
+	A submodule called spirit with 7 files and 1k code line use 6 seconds to compile. When I run sbt, I wait. When I test with playframework, I wait.
+- Large package size
+	The module spirit's one-jar package has at least 20MB size.
 
 I restart to find a light, faster, easy to leaning language. I found *golang*. But there isn't an application framework like I had used in scala. So I began using golang to write [[https://github.com/tbud/][tbud]] in Jan 2015.
 
@@ -27,3 +42,4 @@ I restart to find a light, faster, easy to leaning language. I found *golang*. B
 - With wonderful tool in golang sdk
 - DRY
 
+_Why_use_scoped__ptr_? Use plain ***ptr* instead.

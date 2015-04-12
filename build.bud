@@ -1,7 +1,8 @@
 import _ "github.com/tbud/seeds/present/tasks"
 
 TaskConfig("present", Config{
-	"theme": "base",
+	"theme":    "base",
+	"httpAddr": "127.0.0.1:4000",
 })
 
 UseTasks("present")
