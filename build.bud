@@ -6,3 +6,5 @@ TaskConfig("present", Config{
 })
 
 UseTasks("present")
+
+Task("default", Tasks("present.run"))
